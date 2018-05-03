@@ -1,0 +1,53 @@
+.suites_item
+    position: relative
+    flex-direction: row
+    flex-wrap: wrap
+    height: 800px
+    cursor: pointer
+    img
+        margin-top: 60px 
+    &:hover
+        .overlay
+             opacity: 0.3
+.suites_item_wrap
+    z-index: 1
+.junior
+    background: #ccc url('../img/junior.jpg') no-repeat center center
+.deluxe
+    background: #ccc url('../img/deluxe.jpg') no-repeat center center
+.eden
+    background: #ccc url('../img/eden.jpg') no-repeat center center
+.button_group
+    margin-top: 20px
+    a
+        background-color: $col_wh
+        padding: 5px 12px
+        display: block
+        font-family: opsans-condlight, sans-serif 
+        font-size: 14px
+        line-height: 14px
+        font-weight: 700
+        text-transform: uppercase
+        color: $col_rd
+        margin-right: 10px
+        border-radius: 7px 
+        transition: all .5s ease-in-out
+        &:last-child
+            margin-right: 0
+        .fa
+            margin-right: 5px
+        &:hover
+            background-color: $col_rd
+            color: $col_wh
+            text-decoration: none
+.overlay
+    position: absolute
+    background-color: #000
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    opacity: 0
+    z-index: 0
+    transition: all .5s ease-in-out
+    
