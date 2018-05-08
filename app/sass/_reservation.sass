@@ -1,0 +1,71 @@
+.reservation_img
+    background: #ccc url('../img/reserv_bg.jpg') no-repeat center center
+    background-size: cover
+    height: 800px
+    flex-direction: row
+    justify-content: center
+    align-items: center
+.reservation_desc
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    img
+        width: 80px
+    h2
+        color: $col_wh
+.form_wrap
+    flex-direction: column
+    justify-content: center
+    align-items: center    
+.form_wrap_inner
+    width: 80%
+.form-group
+    input   
+        margin-top: 20px
+        padding: 10px 25px
+        border: 1px solid $col_rd
+        font-family: opsans-condlight, sans-serif 
+        font-size: 14px
+        line-height: 14px
+        outline: 0!important
+       
+.form-control
+    &:focus
+        border-color: $col_rd_lg
+        box-shadow: none
+.check_wrap
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    align-items: center
+    margin-top: 30px
+    label
+        font-family: opsans-condlight, sans-serif 
+        font-size: 14px
+        line-height: 14px
+.custom-control-input:focus~.custom-control-label::before
+        box-shadow: none
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before
+        background-color: $col_rd
+.button_wrap
+    width: 40%
+    margin-top: 30px
+    a
+        display: block
+        text-align: center
+        background: #ffffff
+        border: 1px solid $col_rd
+        padding: 12px 0
+        border-radius: 7px
+        font-family: opsans-condlight, sans-serif 
+        font-size: 18px
+        line-height: 18px
+        font-weight: 700
+        color: $col_rd
+        text-decoration: none
+        text-transform: uppercase
+        cursor: pointer
+        transition: all .5s ease-in-out
+        &:hover
+            background: $col_rd
+            color: $col_wh
