@@ -7,6 +7,8 @@
     &:hover
         .overlay
             opacity: 0.4
+        .button_group
+            transform: translateY(0)
 .suites_item_wrap
     margin: auto
     z-index: 1
@@ -18,6 +20,8 @@
     background: #ccc url('../img/eden.jpg') no-repeat center center
 .button_group
     margin-top: 20px
+    transition: all .5s ease-in-out
+    transform: translateY(300px)
     a
         background-color: $col_wh
         padding: 5px 12px
